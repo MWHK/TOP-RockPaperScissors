@@ -16,3 +16,15 @@ function game() {
     console.log("You lose!");
   }
 }
+
+function multiPlay() {
+  for (let i = 0; i < 6; i++) {
+    if (i === 5) {
+      console.log("Game Over");
+    }
+    else {
+      game();
+    }
+  }
+}
+multiPlay()
