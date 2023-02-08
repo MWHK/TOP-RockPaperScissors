@@ -11,7 +11,7 @@ function playRound() {
     console.log("It's a tie!");
     playRound()
   } else if ((chosenItem === "rock" && randomItem === "scissors") || (chosenItem === "paper" && randomItem === "rock") || (chosenItem === "scissors" && randomItem === "paper")) {
-    console.log("You win!");
+    console.log("You win this round!");
     winCounter++;
     console.log("Current Score: " + "player " + winCounter + " - Computer " + loseCounter);
     if (winCounter < 5) {
@@ -21,7 +21,7 @@ function playRound() {
       return
     }
   } else {
-    console.log("You lose!");
+    console.log("You lose this round!");
     loseCounter++;
     console.log("Current Score: " + "player " + winCounter + " - Computer " + loseCounter);
     if (loseCounter < 5) {
